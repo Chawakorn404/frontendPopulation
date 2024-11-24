@@ -168,7 +168,7 @@
     "flag": "https://flagcdn.com/w320/cg.png"
   },
   {
-    "name": "Congo (Democratic Republic)",
+    "name": "Democratic Republic of Congo",
     "flag": "https://flagcdn.com/w320/cd.png"
   },
   {
@@ -250,6 +250,18 @@
   {
     "name": "France",
     "flag": "https://flagcdn.com/w320/fr.png"
+  },
+  {
+    "name": "French Polynesia",
+    "flag": "https://flagcdn.com/w320/pf.png"
+  },
+  {
+    "name": "New Caledonia",
+    "flag": "https://flagcdn.com/w320/nc.png"
+  },
+  {
+    "name": "Guam",
+    "flag": "https://flagcdn.com/w320/gu.png"
   },
   {
     "name": "Gabon",
@@ -364,11 +376,11 @@
     "flag": "https://flagcdn.com/w320/ki.png"
   },
   {
-    "name": "Korea, North",
+    "name": "North Korea",
     "flag": "https://flagcdn.com/w320/kp.png"
   },
   {
-    "name": "Korea, South",
+    "name": "South Korea",
     "flag": "https://flagcdn.com/w320/kr.png"
   },
   {

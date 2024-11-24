@@ -178,6 +178,8 @@
     "Zimbabwe"
   ],
   "Oceania": [
+    "French Polynesia",
+    "Hawaii",
     "New Caledonia",
     "Tokelau",
     "Wallis and Futuna",
@@ -195,8 +197,9 @@
     "Tonga",
     "Tuvalu",
     "Vanuatu",
-    "Niue",
-    "Small island developing states (SIDS)"
+    "Guam",
+    "Northern Mariana Islands",
+    "Niue"
   ],
   "Americas": [
     "British Virgin Islands",
@@ -208,17 +211,15 @@
     "Cook Islands",
     "Curacao",
     "French Guiana",
-    "French Polynesia",
     "Greenland",
-    "Guam",
+    
     "Isle of Man",
     "Jersey",
     "Martinique",
     "Mayotte",
-    "Micronesia (country)",
     "Montserrat",
     "Northern America (UN)",
-    "Northern Mariana Islands",
+
     "Puerto Rico",
     "Saint Barthelemy",
     "Saint Helena",
