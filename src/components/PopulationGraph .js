@@ -166,6 +166,11 @@ const handlePlayStop = () => {
     backgroundColor: regionColors[region] || "#000",
   });
 
+  
+    useEffect(() => {
+      document.title = 'World Population 1950 - 2021';
+    }, []);
+  
   useEffect(() => {
     const fetchData = async () => {
 
@@ -318,10 +323,10 @@ const handlePlayStop = () => {
 
   return (
     <div className="container">
-      <p className="fs-2 fw-bold">
+      <p className="fs-4 fw-bold mt-3" >
         Population growth per country, 1950 to 2021
       </p>
-      <p className="fs-5">
+      <p className="fs-6" style={{marginTop: "-20px" }}>
         Click on the legend below to filter by continent 👇
       </p>
       <div
@@ -329,7 +334,7 @@ const handlePlayStop = () => {
       >
         <p className="fw-bold">Region:</p>
         {Object.keys(regionColors).map((region) => (
-          <div
+          <div className="fs-6"
             key={region}
             style={{
               display: "flex",
@@ -369,9 +374,9 @@ const handlePlayStop = () => {
               align: "right",
               anchor: "end",
               padding: 5,
-              color: "#000",
+              color: "#A0A0A0",
               offset: 10,
-              font: { size: 12 },
+              font: { size: 14 },
               formatter: (value) => value.toLocaleString(),
             },
           },
@@ -387,12 +392,19 @@ const handlePlayStop = () => {
               ticks: {
                 callback: (value) => value.toLocaleString(),
                 maxTicksLimit: 3,
+                font: {
+                  size: 14 
+                },
               },
             },
             y: {
+              display: true,
               beginAtZero: true,
               ticks: {
                 callback: (value, index) => chartData.labels[index],
+                font: {
+                  size: 14, 
+                },
               },
             },
             x2: {
@@ -405,7 +417,7 @@ const handlePlayStop = () => {
                 stepSize: 4,
                 callback: (value) => value.toString(),
                 font: {
-                  size: 12 
+                  size: 14 
                 },
                 padding: 4 
               },
@@ -433,9 +445,9 @@ const handlePlayStop = () => {
           style={{
             position: "absolute",
             bottom: "50px",
-            right: "150px",
+            right: "0px",
             textAlign: "right",
-            color: "#000",
+            color: "#A0A0A0",
           }}
         >
           <div style={{ fontSize: "5rem", fontWeight: "bold", color: "grey" }}>
@@ -443,7 +455,7 @@ const handlePlayStop = () => {
           </div>
 
           <div
-            style={{ fontSize: "2rem", fontWeight: "normal", color: "grey" }}
+            style={{ fontSize: "2rem", fontWeight: "normal", color: "grey" , marginTop: "-20px" }}
           >
             {"Total: "}
             {totalPopulation.toLocaleString()}
@@ -470,6 +482,12 @@ const handlePlayStop = () => {
       >
         {isPlaying ? <FaStop /> : <FaPlay />}
       </button>
+
+      <div className="mt-2">
+        <p>
+          Source: <a href="https://ourworldindata.org/" target="_blank" style={{ color: "black" }}>Our World in Data</a>
+        </p>
+      </div>
     </div>
   );
 };
